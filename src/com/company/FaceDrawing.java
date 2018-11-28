@@ -22,10 +22,21 @@ public class FaceDrawing {
     }
     public String toString()
     {
+        String str = "";
         for (int row = 0; row < arr.length; row++)
         {
-            
+            for ( int col = 0; col < arr[0].length; col++)
+            {
+                if(arr[row][col].equals("x"))
+                {
+                    str += " ";
+                } else {
+                    str += arr[row][col];
+                }
+            }
+            str += "\n";
         }
+        return str;
     }
 
 }
